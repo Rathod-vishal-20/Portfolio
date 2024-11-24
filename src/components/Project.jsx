@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 import shop from "../assets/ShopEssential.png";
 import razorpay from "../assets/Razorpay.png";
 import todo from "../assets/Todo.png";
@@ -26,13 +26,13 @@ const Project = ({ isDarkTheme }) => {
           Projects
         </h1>
         <div
-          className="flex gap-5 mb-10 justify-center"
+           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 mb-10 justify-center"
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          {/* <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
+          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
             All
-          </button> */}
+          </button>
           <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
             ReactJs
           </button>
@@ -56,7 +56,7 @@ const Project = ({ isDarkTheme }) => {
             { img: health, desc: "NextJS", link: "https://github.com/Rathod-vishal-20/HealthCare-App" }].map((project, index) => (
             <div
               key={index}
-              className="relative hover:scale-105 flex mx-auto px-4 justify-center items-center hover:cursor-pointer shadow-lg shadow-emerald-400 w-[400px] h-[300px] transition-transform duration-300 ease-in-out"
+              className="relative hover:scale-105 flex mx-auto px-4 justify-center items-center hover:cursor-pointer shadow-lg shadow-emerald-400 w-[350px] md:w-[450px] lg:[450px] h-[300px] transition-transform duration-300 ease-in-out"
               data-aos="flip-left"
               data-aos-delay={`${index * 100}`}
             >
