@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css"; // Import AOS styles
 import shop from "../assets/ShopEssential.png";
 import razorpay from "../assets/Razorpay.png";
 import todo from "../assets/Todo.png";
