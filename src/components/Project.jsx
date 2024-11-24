@@ -15,10 +15,10 @@ const Project = ({ isDarkTheme }) => {
 
   return (
     <div
-      className={`flex justify-center items-center mx-auto font-serif ${
+      className={`flex justify-center w-full items-center mx-auto font-serif ${
         isDarkTheme
           ? "bg-gray-900 text-emerald-300"
-          : "bg-gray-100 text-emerald-600"
+          : "bg-gray-100 text-blue-600"
       }`}
     >
       <div>
@@ -30,9 +30,9 @@ const Project = ({ isDarkTheme }) => {
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
+          {/* <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
             All
-          </button>
+          </button> */}
           <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
             ReactJs
           </button>
@@ -56,7 +56,7 @@ const Project = ({ isDarkTheme }) => {
             { img: health, desc: "NextJS", link: "https://github.com/Rathod-vishal-20/HealthCare-App" }].map((project, index) => (
             <div
               key={index}
-              className="relative hover:scale-105 flex mx-auto px-4 justify-center items-center hover:cursor-pointer shadow-lg shadow-emerald-400 w-[450px] h-[300px] transition-transform duration-300 ease-in-out"
+              className="relative hover:scale-105 flex mx-auto px-4 justify-center items-center hover:cursor-pointer shadow-lg shadow-emerald-400 w-[400px] h-[300px] transition-transform duration-300 ease-in-out"
               data-aos="flip-left"
               data-aos-delay={`${index * 100}`}
             >
