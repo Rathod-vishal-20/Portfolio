@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter, FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareXTwitter,FaGithub, FaSquareInstagram } from "react-icons/fa6";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import emailjs from "@emailjs/browser";
@@ -60,7 +60,7 @@ const Contact = ({ isDarkTheme }) => {
 
   return (
     <div
-      className={`font-serif min-h-screen flex flex-col items-center justify-center px-4 ${
+      className={`font-serif w-full  min-h-screen flex flex-col items-center justify-center px-4 ${
         isDarkTheme
           ? "bg-gray-900 text-emerald-300"
           : "bg-gray-100 text-emerald-600"
@@ -75,7 +75,7 @@ const Contact = ({ isDarkTheme }) => {
         data-aos="fade-up"
       >
        
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center mx-auto ">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center mx-auto ">
       
           <div className="shadow-lg shadow-teal-300 rounded-lg p-6 text-center border border-teal-300">
             <FaLinkedin className="mx-auto text-blue-700 text-5xl mb-4" />
@@ -90,6 +90,22 @@ const Contact = ({ isDarkTheme }) => {
               Let's Connect
             </a>
           </div>
+
+
+          <div className="shadow-lg shadow-teal-300 rounded-lg p-6 text-center border border-teal-300">
+            <FaGithub className="mx-auto text-blue-400 text-5xl mb-4" />
+            <h3 className="font-bold text-blue-400"></h3>Git Hub
+            <p className="text-sm">Vishal Rathod</p>
+            <a
+              href="https://github.com/Rathod-vishal-20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-700 font-semibold hover:underline"
+            >
+              Let's Connect
+            </a>
+          </div>
+
 
           <div className="shadow-lg shadow-teal-300 rounded-lg p-6 text-center border border-teal-300">
             <FaSquareXTwitter className="mx-auto text-blue-400 text-5xl mb-4" />
