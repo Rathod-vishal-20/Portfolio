@@ -30,16 +30,16 @@ const Project = ({ isDarkTheme }) => {
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
+          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-700 font-semibold text-xl font-sans shadow-emerald-400">
             All
           </button>
-          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
+          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-700 font-semibold  text-xl font-sans shadow-emerald-400">
             ReactJs
           </button>
-          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400">
+          <button className="hover:bg-green-600 rounded-lg px-8 shadow-md text-gray-700 font-semibold  text-xl font-sans shadow-emerald-400">
             NextJs
           </button>
-          <button className="hover:bg-green-600 px-8 shadow-md text-gray-100 text-xl font-sans shadow-emerald-400 rounded-lg">
+          <button className="hover:bg-green-600 px-8 shadow-md  text-xl font-sans text-gray-700 font-semibold shadow-emerald-400 rounded-lg">
             Mern
           </button>
         </div>
@@ -47,11 +47,11 @@ const Project = ({ isDarkTheme }) => {
           className="grid grid-cols-1 mx-auto justify-center items-center gap-8 md:grid-cols-2 lg:grid-cols-3"
           data-aos="fade-up"
         >
-          {/* Project Cards */}
-          {[{ img: shop, desc: "MERN Stack", link: "https://shop-essential-sxmu.vercel.app/" },
+          
+          {[{ img: shop, desc: "MERN Stack", link: "https://shopessential-fronted.onrender.com/" },
             { img: razorpay, desc: "Tailwind", link: "https://razorpayclone-self.vercel.app/" },
-            { img: todo, desc: "HTML, CSS, JS", link: "https://razorpayclone-self.vercel.app/" },
-            { img: clever, desc: "ReactJS", link: "https://razorpayclone-self.vercel.app/" },
+            { img: todo, desc: "HTML, CSS, JS", link: "https://todo-app-drab-three-27.vercel.app/" },
+            { img: clever, desc: "ReactJS", link: "https://creast.vercel.app/" },
             { img: music, desc: "NextJS", link: "https://github.com/Rathod-vishal-20/musicapp" },
             { img: health, desc: "NextJS", link: "https://github.com/Rathod-vishal-20/HealthCare-App" }].map((project, index) => (
             <div
